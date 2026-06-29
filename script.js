@@ -196,21 +196,47 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.innerHTML = 'Inatuma... <i class="fa-solid fa-spinner fa-spin"></i>';
 
-      // Simulate Network Request
-      setTimeout(() => {
+      // Send actual AJAX request to FormSubmit
+      fetch("https://formsubmit.co/ajax/info@nyisu.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          subject: document.getElementById("subject").value,
+          message: document.getElementById("message").value
+        })
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Tuma imefeli");
+        }
+      })
+      .then(data => {
+        formStatus.style.display = 'block';
         formStatus.className = 'form-status success';
         formStatus.innerText = 'Asante! Ujumbe wako umetumwa kwa ufanisi. Timu ya Nyisu Tech Solution itakujibu hivi punde.';
-        
-        // Reset form
         contactForm.reset();
+      })
+      .catch(error => {
+        formStatus.style.display = 'block';
+        formStatus.className = 'form-status error';
+        formStatus.innerText = 'Samahani, ujumbe haujatumwa. Tafadhali jaribu tena au wasiliana nasi moja kwa moja kwa barua pepe.';
+      })
+      .finally(() => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnHTML;
-
-        // Hide success message after 5 seconds
+        
+        // Hide success/error message after 6 seconds
         setTimeout(() => {
           formStatus.style.display = 'none';
-        }, 5000);
-      }, 1500);
+        }, 6000);
+      });
     });
   }
 });
