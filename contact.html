@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wasiliana Nasi | Nyisu Tech Solution</title>
+  <meta name="description" content="Wasiliana na Nyisu Tech Solution kwa ajili ya kutengenezewa website, mifumo, kujiunga na mafunzo ya programming au huduma za cloud hosting.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Background Animated Blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="Nyisu Tech Solution Logo">
+        <span>Nyisu Tech</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Mwanzo</a></li>
+        <li><a href="about.html">Kuhusu Sisi</a></li>
+        <li><a href="projects.html">Kazi Zetu</a></li>
+        <li><a href="hosting.html">Hosting Services</a></li>
+        <li><a href="contact.html" class="active">Mawasiliano</a></li>
+      </ul>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button class="theme-toggle-btn" id="themeToggle" title="Badili muonekano">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Fungua Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Wasiliana <span>Nasi</span></h1>
+    <p>Una wazo la mradi, unataka kuhost website, unahitaji usimamizi wa mifumo au unataka kujiunga na darasa la coding? Tuma ujumbe wako sasa.</p>
+  </div>
+
+  <!-- Contact Section Info and Form -->
+  <section id="contact" style="padding-top: 1rem;">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-card glass-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="contact-details">
+            <h4>Barua Pepe</h4>
+            <p><a href="mailto:info@nyisu.com" style="color: var(--text-primary); text-decoration: none;">info@nyisu.com</a></p>
+            <p style="font-size: 0.85rem;"><a href="mailto:support@nyisu.com" style="color: var(--text-secondary); text-decoration: none;">support@nyisu.com</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-card glass-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="contact-details">
+            <h4>Simu / WhatsApp</h4>
+            <p>+255 700 000 000</p>
+          </div>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="contact-details">
+            <h4>Ofisi Yetu</h4>
+            <p>Dar es Salaam, Tanzania</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-container">
+        <form class="contact-form glass-card" id="contactForm" action="https://formsubmit.co/info@nyisu.com" method="POST">
+          <div class="form-status" id="formStatus"></div>
+          <div class="form-group">
+            <label for="name">Jina Kamili / Jina la Kampuni</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Andika jina lako au la kampuni..." required>
+          </div>
+          <div class="form-group">
+            <label for="email">Barua Pepe</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="Andika barua pepe yako..." required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Kuhusu (Suala/Kifurushi)</label>
+            <select id="subject" name="subject" class="form-input" style="background-color: var(--bg-secondary); color: var(--text-primary);">
+              <option value="general">Mengineyo / Ushauri wa Kidijitali</option>
+              <option value="web_dev">Kutengenezewa Mfumo (Web Application)</option>
+              <option value="web_maintenance">Usimamizi na Matengenezo ya Website (Maintenance)</option>
+              <option value="academy">Kujiunga na Mafunzo ya Programming (Coding Academy)</option>
+              <option value="hosting_basic">Kuhost - Kifurushi cha Kawaida (Tsh 5,000/mwezi)</option>
+              <option value="hosting_business">Kuhost - Kifurushi cha Biashara (Tsh 12,000/mwezi)</option>
+              <option value="hosting_custom">Kuhost - Custom Cloud/Mifumo (Tsh 30,000+/mwezi)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Ujumbe Wako</label>
+            <textarea id="message" name="message" class="form-input" placeholder="Eleza kwa ufupi wazo la mradi, mafunzo au mahitaji yako..." required></textarea>
+          </div>
+          
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_next" value="https://nyisu.com/contact.html">
+          <input type="hidden" name="_subject" value="New Inquiry from Nyisu Tech Website">
+          <input type="hidden" name="_captcha" value="false">
+
+          <button type="submit" class="btn btn-primary submit-btn">Tuma Ujumbe <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-socials">
+      <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2026 Nyisu Tech Solution. Haki zote zimehifadhiwa.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

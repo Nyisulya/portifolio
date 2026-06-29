@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huduma za Hosting | Nyisu Tech Solution</title>
+  <meta name="description" content="Sajili na uhost website yako kwenye cloud servers zetu zenye kasi kubwa, salama na bei nafuu sana nchini Tanzania.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Background Animated Blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="Nyisu Tech Solution Logo">
+        <span>Nyisu Tech</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Mwanzo</a></li>
+        <li><a href="about.html">Kuhusu Sisi</a></li>
+        <li><a href="projects.html">Kazi Zetu</a></li>
+        <li><a href="hosting.html" class="active">Hosting Services</a></li>
+        <li><a href="contact.html">Mawasiliano</a></li>
+      </ul>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button class="theme-toggle-btn" id="themeToggle" title="Badili muonekano">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Fungua Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Huduma za <span>Hosting</span></h1>
+    <p>Ondoa hofu ya website yako kuwa nzito au kukwama. Uhost tovuti yako kwenye servers zetu za kasi kubwa na gharama nafuu.</p>
+  </div>
+
+  <!-- Hosting Plans Section -->
+  <section style="padding-top: 1rem;">
+    <h2 class="section-title">Chagua <span>Kifurushi Chako</span></h2>
+    
+    <div class="pricing-grid">
+      <!-- Plan 1: Kawaida (Basic) -->
+      <div class="pricing-card glass-card">
+        <div class="pricing-header">
+          <div class="pricing-name">Hosting ya Kawaida</div>
+          <div class="pricing-price">Tsh 5,000<span>/ mwezi</span></div>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem;">Inafaa kwa blogu au tovuti ndogo za kibinafsi</p>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fa-solid fa-check"></i> 5 GB Superfast Storage</li>
+          <li><i class="fa-solid fa-check"></i> Bandwidth isiyo na kikomo</li>
+          <li><i class="fa-solid fa-check"></i> SSL Certificate Bure (HTTPS)</li>
+          <li><i class="fa-solid fa-check"></i> 1 Custom Domain</li>
+          <li><i class="fa-solid fa-check"></i> 3 Email Accounts</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Hifadhi ya Kila siku (Daily Backups)</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Dedicated Dedicated Resources</li>
+        </ul>
+        <a href="contact.html?plan=basic" class="btn btn-secondary pricing-btn">Chagua Kifurushi</a>
+      </div>
+
+      <!-- Plan 2: Biashara (Premium/Featured) -->
+      <div class="pricing-card glass-card featured">
+        <div class="pricing-badge">Maarufu</div>
+        <div class="pricing-header">
+          <div class="pricing-name">Hosting ya Biashara</div>
+          <div class="pricing-price">Tsh 12,000<span>/ mwezi</span></div>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem;">Inafaa kwa kampuni na maduka ya mtandaoni</p>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fa-solid fa-check"></i> 25 GB Superfast Storage</li>
+          <li><i class="fa-solid fa-check"></i> Bandwidth isiyo na kikomo</li>
+          <li><i class="fa-solid fa-check"></i> SSL Certificate Bure (HTTPS)</li>
+          <li><i class="fa-solid fa-check"></i> Up to 5 Custom Domains</li>
+          <li><i class="fa-solid fa-check"></i> Email isiyo na kikomo</li>
+          <li><i class="fa-solid fa-check"></i> Daily Backups (Bure)</li>
+          <li class="disabled"><i class="fa-solid fa-xmark"></i> Dedicated Dedicated Resources</li>
+        </ul>
+        <a href="contact.html?plan=business" class="btn btn-primary pricing-btn">Chagua Kifurushi</a>
+      </div>
+
+      <!-- Plan 3: Custom / dedicated (Enterprise) -->
+      <div class="pricing-card glass-card">
+        <div class="pricing-header">
+          <div class="pricing-name">Custom Cloud / Mifumo</div>
+          <div class="pricing-price">Tsh 30,000<span>/ mwezi</span></div>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem;">Inafaa kwa mifumo mikubwa (Web Apps / APIs)</p>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fa-solid fa-check"></i> Custom Storage (50GB+)</li>
+          <li><i class="fa-solid fa-check"></i> Cloud Dedicated RAM & CPU resources</li>
+          <li><i class="fa-solid fa-check"></i> SSL Certificates zote Bure</li>
+          <li><i class="fa-solid fa-check"></i> Domains zisizo na kikomo</li>
+          <li><i class="fa-solid fa-check"></i> Custom Configurations (Node/Python/PHP)</li>
+          <li><i class="fa-solid fa-check"></i> Automated Daily Backups</li>
+          <li><i class="fa-solid fa-check"></i> Dedicated IP Address</li>
+        </ul>
+        <a href="contact.html?plan=custom" class="btn btn-secondary pricing-btn">Omba Nukuu (Quote)</a>
+      </div>
+    </div>
+
+    <!-- Feature Highlights -->
+    <div style="margin-top: 6rem;">
+      <h2 class="section-title">Vipengele vya <span>Server Zetu</span></h2>
+      <div class="hosting-features-grid">
+        <div class="feature-box glass-card">
+          <i class="fa-solid fa-gauge-high"></i>
+          <h3>Uharaka na Kasi</h3>
+          <p>Server zetu zinatumia teknolojia ya kisasa ya cloud performance, ikihakikisha website yako inapakia kurasa zake chini ya sekunde 1.5.</p>
+        </div>
+        <div class="feature-box glass-card">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <h3>99.9% Uptime Guaranteed</h3>
+          <p>Mifumo yetu inasimamiwa kwa karibu kuhakikisha website yako inapatikana wakati wote bila kukatika au kuwa nzito.</p>
+        </div>
+        <div class="feature-box glass-card">
+          <i class="fa-solid fa-lock"></i>
+          <h3>Ulinzi na Salama</h3>
+          <p>Tunakuhakikishia usalama wa data zako na za wateja wako kwa kutumia mifumo thabiti ya ulinzi na firewalls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-socials">
+      <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2026 Nyisu Tech Solution. Haki zote zimehifadhiwa.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

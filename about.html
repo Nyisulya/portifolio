@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuhusu Sisi | Nyisu Tech Solution</title>
+  <meta name="description" content="Jifunze zaidi kuhusu Nyisu Tech Solution, mafunzo yetu ya programming, na teknolojia tunazotumia kuunda na kusimamai mifumo.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Background Animated Blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="Nyisu Tech Solution Logo">
+        <span>Nyisu Tech</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Mwanzo</a></li>
+        <li><a href="about.html" class="active">Kuhusu Sisi</a></li>
+        <li><a href="projects.html">Kazi Zetu</a></li>
+        <li><a href="hosting.html">Hosting Services</a></li>
+        <li><a href="contact.html">Mawasiliano</a></li>
+      </ul>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button class="theme-toggle-btn" id="themeToggle" title="Badili muonekano">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Fungua Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Kuhusu <span>Sisi</span></h1>
+    <p>Nyisu Tech Solution ni kituo cha ubunifu wa mifumo, uendeshaji server na chuo bora cha mafunzo ya vitendo ya programming.</p>
+  </div>
+
+  <!-- About Details & Skills -->
+  <section id="about-details" style="padding-top: 1rem; padding-bottom: 3rem;">
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Nyisu Tech Solution inajumuisha timu thabiti ya wataalamu wa mifumo ya kompyuta, wasimamizi wa cloud servers na walimu wa programming. Tunajikita katika maeneo makuu matatu: kubuni na kutengeneza mifumo salama, kutoa huduma za hosting na usimamizi wa server, pamoja na kuendesha programu yetu ya **Programming Academy** ili kutoa mafunzo ya vitendo ya coding.</p>
+        <p>Tunaamini katika unyumbulifu na uwezo wa kubadilika kulingana na mabadiliko ya teknolojia na bajeti ya mteja. Kila suluhisho tunalounda au kulifundisha linalenga kuleta ufanisi mkubwa wa kiutendaji na kutengeneza fursa mpya za kiteknolojia.</p>
+        <p>Kupitia cloud server zetu thabiti, tunahakikisha tovuti zote tunazozijenga na kuzisimamia zinaendelea kuwa hewani 24/7 kwa kasi kubwa na ulinzi thabiti wa kiusalama.</p>
+      </div>
+      
+      <!-- Skills Matrix -->
+      <div class="skills-container">
+        <div class="skill-tag glass-card">
+          <i class="fa-brands fa-html5"></i>
+          <span>HTML5 / CSS3</span>
+        </div>
+        <div class="skill-tag glass-card">
+          <i class="fa-brands fa-js"></i>
+          <span>JavaScript (ES6+)</span>
+        </div>
+        <div class="skill-tag glass-card">
+          <i class="fa-brands fa-react"></i>
+          <span>React / Next.js</span>
+        </div>
+        <div class="skill-tag glass-card">
+          <i class="fa-brands fa-python"></i>
+          <span>Python / Django</span>
+        </div>
+        <div class="skill-tag glass-card">
+          <i class="fa-solid fa-database"></i>
+          <span>PostgreSQL / MySQL</span>
+        </div>
+        <div class="skill-tag glass-card">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Academy Teaching</span>
+        </div>
+        <div class="skill-tag glass-card">
+          <i class="fa-solid fa-server"></i>
+          <span>Server Management</span>
+        </div>
+        <div class="skill-tag glass-card">
+          <i class="fa-brands fa-docker"></i>
+          <span>Docker / Container</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision Section -->
+  <section style="padding: 3rem 2rem; background: rgba(0, 0, 0, 0.05); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+    <div class="about-grid">
+      <!-- Dira (Vision) -->
+      <div class="feature-box glass-card" style="padding: 2.5rem;">
+        <i class="fa-solid fa-eye" style="font-size: 2.5rem; margin-bottom: 1.25rem; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Dira Yetu (Vision)</h3>
+        <p style="color: var(--text-secondary); line-height: 1.7;">Kuwa kituo kikuu cha kutoa huduma za kisasa za teknolojia na elimu ya vitendo ya mifumo nchini Tanzania na Afrika Mashariki, tukiwajenga vijana na biashara kukua kidijitali kwa njia salama na yenye ufanisi.</p>
+      </div>
+
+      <!-- Dhamira (Mission) -->
+      <div class="feature-box glass-card" style="padding: 2.5rem;">
+        <i class="fa-solid fa-bullseye" style="font-size: 2.5rem; margin-bottom: 1.25rem; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Dhamira Yetu (Mission)</h3>
+        <p style="color: var(--text-secondary); line-height: 1.7;">Kutoa huduma bora na za kuaminika za kubuni mifumo (systems development), cloud hosting thabiti, na kutoa mafunzo yasiyo na kikomo ya coding ili kuwaandaa wataalamu thabiti watakaoleta mapinduzi ya viwanda vya kiteknolojia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values Section -->
+  <section style="padding: 5rem 2rem 6rem;">
+    <h2 class="section-title">Maadili Yetu <span>Ya Kazi (Core Values)</span></h2>
+    <div class="hosting-features-grid">
+      <!-- Value 1 -->
+      <div class="feature-box glass-card">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h3>Ubunifu (Innovation)</h3>
+        <p>Kila mfumo tunaotengeneza unazingatia ubunifu wa hali ya juu na kuangalia namna bora zaidi ya kurahisisha kazi kwa mtumiaji wa mwisho.</p>
+      </div>
+
+      <!-- Value 2 -->
+      <div class="feature-box glass-card">
+        <i class="fa-solid fa-handshake"></i>
+        <h3>Uaminifu (Integrity)</h3>
+        <p>Tunajenga mahusiano ya kudumu na wateja wetu kupitia uwazi, uaminifu wa gharama za hosting na mikataba ya kazi.</p>
+      </div>
+
+      <!-- Value 3 -->
+      <div class="feature-box glass-card">
+        <i class="fa-solid fa-award"></i>
+        <h3>Ubora na Viwango</h3>
+        <p>Hatufanyi kazi kwa kubahatisha. Kila code, template na server config inakaguliwa kuhakikisha inakidhi viwango vya kasi na usalama wa kimataifa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-socials">
+      <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2026 Nyisu Tech Solution. Haki zote zimehifadhiwa.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

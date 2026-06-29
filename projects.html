@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kazi Zetu | Nyisu Tech Solution</title>
+  <meta name="description" content="Tazama orodha ya mifumo, tovuti, na applications zilizojengwa na Nyisu Tech Solution kwa ajili ya wateja wetu.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Background Animated Blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="Nyisu Tech Solution Logo">
+        <span>Nyisu Tech</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Mwanzo</a></li>
+        <li><a href="about.html">Kuhusu Sisi</a></li>
+        <li><a href="projects.html" class="active">Kazi Zetu</a></li>
+        <li><a href="hosting.html">Hosting Services</a></li>
+        <li><a href="contact.html">Mawasiliano</a></li>
+      </ul>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button class="theme-toggle-btn" id="themeToggle" title="Badili muonekano">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Fungua Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Miradi <span>Yetu</span></h1>
+    <p>Orodha ya kazi, mifumo na tovuti zilizojengwa na kukabidhiwa kwa wateja wetu hivi karibuni.</p>
+  </div>
+
+  <!-- Projects Grid Section -->
+  <section id="projects" style="padding-top: 1rem;">
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">Zote</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+      <button class="filter-btn" data-filter="design">UI/UX Design</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Project 1: Vyuo Tanzania -->
+      <div class="project-card glass-card" data-category="web">
+        <div class="project-img" style="background-image: linear-gradient(135deg, #a78bfa 0%, #1e1b4b 100%);"></div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span>Django</span>
+            <span>PostgreSQL</span>
+            <span>Web App</span>
+          </div>
+          <h3>Vyuo Tanzania (vyuotanzania.nyisu.com)</h3>
+          <p>Mfumo thabiti na wa kisasa wa kutafuta, kulinganisha na kuchagua vyuo mbalimbali vya elimu ya juu nchini Tanzania.</p>
+          <div class="project-links">
+            <a href="https://vyuotanzania.nyisu.com" target="_blank" class="project-link"><i class="fa-solid fa-link"></i> Live System</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Nyahende Family Portal -->
+      <div class="project-card glass-card" data-category="web">
+        <div class="project-img" style="background-image: linear-gradient(135deg, #34d399 0%, #064e3b 100%);"></div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span>Python</span>
+            <span>MySQL</span>
+            <span>Family Tree</span>
+          </div>
+          <h3>Mfumo wa Ukoo wa Nyahende (nyahende.nyisu.com)</h3>
+          <p>Mfumo maalum wa kidijitali wa kutunza kumbukumbu, historia ya ukoo, mti wa familia (family tree), na mawasiliano ya ukoo wa Nyahende.</p>
+          <div class="project-links">
+            <a href="https://nyahende.nyisu.com" target="_blank" class="project-link"><i class="fa-solid fa-link"></i> Live System</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: E-Commerce App -->
+      <div class="project-card glass-card" data-category="mobile">
+        <div class="project-img" style="background-image: linear-gradient(135deg, #60a5fa 0%, #1e3a8a 100%);"></div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Mobile App</span>
+          </div>
+          <h3>App ya Biashara ya Mtandaoni (E-Commerce App)</h3>
+          <p>Application ya simu ya mkononi inayoruhusu wateja kununua na kulipia bidhaa kupitia huduma za pesa za mkononi (M-Pesa, Tigopesa, Airtel Money).</p>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fa-solid fa-link"></i> Download App</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: AgriTech UI/UX -->
+      <div class="project-card glass-card" data-category="design">
+        <div class="project-img" style="background-image: linear-gradient(135deg, #f472b6 0%, #831843 100%);"></div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span>Figma</span>
+            <span>UI/UX Design</span>
+            <span>Prototyping</span>
+          </div>
+          <h3>Muonekano wa App ya Kilimo (AgriTech UI/UX)</h3>
+          <p>Ubunifu wa kiolesura (UI/UX) kwa ajili ya mifumo ya kusaidia wakulima kupata habari za hali ya hewa na soko la mazao.</p>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fa-solid fa-link"></i> Behance Case Study</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-socials">
+      <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2026 Nyisu Tech Solution. Haki zote zimehifadhiwa.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

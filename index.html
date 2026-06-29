@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyisu Tech Solution | Systems Development, Hosting & IT Training</title>
+  <meta name="description" content="Nyisu Tech Solution inatoa huduma za kutengeneza mifumo, cloud hosting, usimamizi wa website na mafunzo ya programming (coding) kwa viwango vya kisasa.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Background Animated Blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="Nyisu Tech Solution Logo">
+        <span>Nyisu Tech</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Mwanzo</a></li>
+        <li><a href="about.html">Kuhusu Sisi</a></li>
+        <li><a href="projects.html">Kazi Zetu</a></li>
+        <li><a href="hosting.html">Hosting Services</a></li>
+        <li><a href="contact.html">Mawasiliano</a></li>
+      </ul>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button class="theme-toggle-btn" id="themeToggle" title="Badili muonekano">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Fungua Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <h2>Nyisu Tech Solution</h2>
+        <h1>Web Development, Hosting & <br><span>Programming Academy</span></h1>
+        <p>Tunaunda mifumo thabiti ya wavuti, tunatoa huduma za hosting salama na kuisimamia kwa ufanisi mkubwa. Pia tunatoa mafunzo bora ya vitendo (Programming Academy) kukuza wataalamu wa kesho wa IT na coding!</p>
+        <div class="cta-group">
+          <a href="hosting.html" class="btn btn-primary">Tazama Vifurushi vya Hosting <i class="fa-solid fa-server"></i></a>
+          <a href="contact.html" class="btn btn-secondary">Jiunge na Mafunzo ya Coding</a>
+        </div>
+      </div>
+
+      <!-- Developer Interactive Terminal -->
+      <div class="terminal-card glass-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+          </div>
+          <span class="terminal-title">guest@nyisu.com: ~</span>
+          <i class="fa-regular fa-copy" style="cursor: pointer; font-size: 0.85rem;" title="Nakili output ya terminal" id="copyTerminal"></i>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <div class="terminal-line">
+            <span class="terminal-prompt">$</span> <span class="command">cat welcome.txt</span>
+            <div class="output">Karibu Nyisu Tech Solution! Amri yetu ya huduma ipo tayari. Jaribu kuandika 'services' hapa chini.</div>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">$</span> <span class="command">help</span>
+            <div class="output">Amri zinazokubalika: 'about', 'services', 'skills', 'hosting', 'clear', 'help'</div>
+          </div>
+          <div class="terminal-input-line">
+            <span class="terminal-prompt">$</span>
+            <input type="text" class="terminal-input" id="terminalInput" placeholder="Andika amri (mfano: services)..." autofocus autocomplete="off">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Services Section -->
+  <section style="padding: 4rem 2rem 2rem;">
+    <h2 class="section-title">Huduma <span>Zetu Kuu</span></h2>
+    <div class="hosting-features-grid">
+      <!-- Service 1: Systems Dev -->
+      <div class="feature-box glass-card">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>Mifumo & Web Development</h3>
+        <p>Kubuni na kutengeneza mifumo thabiti ya wavuti, tovuti za kibiashara, na applications za simu zinazokidhi viwango vya kisasa.</p>
+      </div>
+
+      <!-- Service 2: Hosting & Management -->
+      <div class="feature-box glass-card">
+        <i class="fa-solid fa-server"></i>
+        <h3>Hosting & Usimamizi (Management)</h3>
+        <p>Hosting ya tovuti kwenye cloud servers salama, usimamizi wa mifumo (server maintenance) na usaidizi wa kiufundi wa 24/7.</p>
+      </div>
+
+      <!-- Service 3: Programming Academy -->
+      <div class="feature-box glass-card">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h3>Mafunzo ya Programming</h3>
+        <p>Madarasa ya vitendo ya lugha mbalimbali za coding (HTML/CSS, JS, React, Python/Django) kwa kuanzia ngazi ya chini kabisa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Hosting Highlights Section -->
+  <section style="padding: 2rem 2rem 6rem;">
+    <h2 class="section-title">Kwanini Ufanye Kazi <span>Nasi?</span></h2>
+    <div class="hosting-features-grid">
+      <div class="feature-box glass-card">
+        <i class="fa-solid fa-bolt"></i>
+        <h3>Unyumbulifu na Ubunifu</h3>
+        <p>Tunarekebisha na kusanifu huduma zetu kulingana na mahitaji yako maalum ya mradi, mafunzo au bajeti yako.</p>
+      </div>
+
+      <div class="feature-box glass-card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Ulinzi na SSL Bure</h3>
+        <p>Mifumo na tovuti zote tunazosimamia na kuhost zinapata ulinzi wa kisasa na vyeti vya usalama vya SSL bure kabisa.</p>
+      </div>
+
+      <div class="feature-box glass-card">
+        <i class="fa-solid fa-headset"></i>
+        <h3>Msaada wa Kiufundi 24/7</h3>
+        <p>Timu yetu ya wataalamu ipo tayari kukusaidia kutatua changamoto zote za kiufundi au server wakati wowote.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-socials">
+      <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2026 Nyisu Tech Solution. Haki zote zimehifadhiwa.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
