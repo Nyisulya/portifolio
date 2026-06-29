@@ -52,6 +52,17 @@ body {
 }
 
 /* Background blob animations for modern aesthetic */
+.bg-blobs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
 .blob {
   position: absolute;
   width: 500px;
@@ -821,6 +832,7 @@ section {
 }
 
 .form-input {
+  width: 100%;
   background: rgba(0, 0, 0, 0.1);
   border: 1px solid var(--glass-border);
   border-radius: 8px;
