@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nyisu Tech Solution | Systems Development, Hosting & IT Training</title>
   <meta name="description" content="Nyisu Tech Solution inatoa huduma za kutengeneza mifumo, cloud hosting, usimamizi wa website na mafunzo ya programming (coding) kwa viwango vya kisasa.">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=4">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -47,38 +47,36 @@
   <section class="hero" id="home">
     <div class="hero-grid">
       <div class="hero-content">
-        <h2>Nyisu Tech Solution</h2>
-        <h1>Web Development, Hosting & <br><span>Programming Academy</span></h1>
-        <p>Tunaunda mifumo thabiti ya wavuti, tunatoa huduma za hosting salama na kuisimamia kwa ufanisi mkubwa. Pia tunatoa mafunzo bora ya vitendo (Programming Academy) kukuza wataalamu wa kesho wa IT na coding!</p>
+        <div class="hero-badge"><i class="fa-solid fa-rocket"></i> Nyisu Tech Solution</div>
+        <h1>Premium Web Development & <br><span>Managed Hosting</span></h1>
+        <p>Tunatengeneza mifumo thabiti ya wavuti na kusimamia kikamilifu hosting ya website yako. Wewe fanya biashara, sisi tutashughulikia ufundi wote kwa usalama na kasi ya hali ya juu.</p>
         <div class="cta-group">
-          <a href="hosting.html" class="btn btn-primary">Tazama Vifurushi vya Hosting <i class="fa-solid fa-server"></i></a>
-          <a href="contact.html" class="btn btn-secondary">Jiunge na Mafunzo ya Coding</a>
+          <a href="hosting.html" class="btn btn-primary">Vifurushi vya Usimamizi <i class="fa-solid fa-server"></i></a>
+          <a href="projects.html" class="btn btn-secondary">Tazama Kazi Zetu</a>
         </div>
       </div>
 
-      <!-- Developer Interactive Terminal -->
-      <div class="terminal-card glass-card">
-        <div class="terminal-header">
-          <div class="terminal-dots">
-            <span class="terminal-dot dot-red"></span>
-            <span class="terminal-dot dot-yellow"></span>
-            <span class="terminal-dot dot-green"></span>
+      <!-- Modern Hero Graphic -->
+      <div class="hero-graphic">
+        <div class="floating-card card-1 glass-card">
+          <i class="fa-solid fa-code"></i>
+          <div>
+            <h4>Mifumo ya Kisasa</h4>
+            <span>Clean & Scalable Code</span>
           </div>
-          <span class="terminal-title">guest@nyisu.com: ~</span>
-          <i class="fa-regular fa-copy" style="cursor: pointer; font-size: 0.85rem;" title="Nakili output ya terminal" id="copyTerminal"></i>
         </div>
-        <div class="terminal-body" id="terminalBody">
-          <div class="terminal-line">
-            <span class="terminal-prompt">$</span> <span class="command">cat welcome.txt</span>
-            <div class="output">Karibu Nyisu Tech Solution! Amri yetu ya huduma ipo tayari. Jaribu kuandika 'services' hapa chini.</div>
+        <div class="floating-card card-2 glass-card">
+          <i class="fa-solid fa-server"></i>
+          <div>
+            <h4>Usimamizi Kamili</h4>
+            <span>99.9% Uptime Hosting</span>
           </div>
-          <div class="terminal-line">
-            <span class="terminal-prompt">$</span> <span class="command">help</span>
-            <div class="output">Amri zinazokubalika: 'about', 'services', 'skills', 'hosting', 'clear', 'help'</div>
-          </div>
-          <div class="terminal-input-line">
-            <span class="terminal-prompt">$</span>
-            <input type="text" class="terminal-input" id="terminalInput" placeholder="Andika amri (mfano: services)..." autofocus autocomplete="off">
+        </div>
+        <div class="floating-card card-3 glass-card">
+          <i class="fa-solid fa-rocket"></i>
+          <div>
+            <h4>Kasi & Usalama</h4>
+            <span>Optimized Performance</span>
           </div>
         </div>
       </div>
@@ -88,23 +86,23 @@
   <!-- Our Services Section -->
   <section style="padding: 4rem 2rem 2rem;">
     <h2 class="section-title">Huduma <span>Zetu Kuu</span></h2>
-    <div class="hosting-features-grid">
+    <div class="bento-grid">
       <!-- Service 1: Systems Dev -->
-      <div class="feature-box glass-card">
+      <div class="bento-item bento-wide">
         <i class="fa-solid fa-laptop-code"></i>
         <h3>Mifumo & Web Development</h3>
-        <p>Kubuni na kutengeneza mifumo thabiti ya wavuti, tovuti za kibiashara, na applications za simu zinazokidhi viwango vya kisasa.</p>
+        <p>Kubuni na kutengeneza mifumo thabiti ya wavuti, tovuti za kibiashara, na applications za simu zinazokidhi viwango vya kisasa. Tunatumia teknolojia za kisasa kuhakikisha mfumo wako unakua pamoja na biashara yako.</p>
       </div>
 
       <!-- Service 2: Hosting & Management -->
-      <div class="feature-box glass-card">
+      <div class="bento-item">
         <i class="fa-solid fa-server"></i>
-        <h3>Hosting & Usimamizi (Management)</h3>
+        <h3>Hosting & Usimamizi</h3>
         <p>Hosting ya tovuti kwenye cloud servers salama, usimamizi wa mifumo (server maintenance) na usaidizi wa kiufundi wa 24/7.</p>
       </div>
 
       <!-- Service 3: Programming Academy -->
-      <div class="feature-box glass-card">
+      <div class="bento-item">
         <i class="fa-solid fa-graduation-cap"></i>
         <h3>Mafunzo ya Programming</h3>
         <p>Madarasa ya vitendo ya lugha mbalimbali za coding (HTML/CSS, JS, React, Python/Django) kwa kuanzia ngazi ya chini kabisa.</p>
@@ -115,23 +113,23 @@
   <!-- Quick Hosting Highlights Section -->
   <section style="padding: 2rem 2rem 6rem;">
     <h2 class="section-title">Kwanini Ufanye Kazi <span>Nasi?</span></h2>
-    <div class="hosting-features-grid">
-      <div class="feature-box glass-card">
+    <div class="bento-grid">
+      <div class="bento-item">
         <i class="fa-solid fa-bolt"></i>
-        <h3>Unyumbulifu na Ubunifu</h3>
+        <h3>Unyumbulifu & Ubunifu</h3>
         <p>Tunarekebisha na kusanifu huduma zetu kulingana na mahitaji yako maalum ya mradi, mafunzo au bajeti yako.</p>
       </div>
 
-      <div class="feature-box glass-card">
+      <div class="bento-item">
         <i class="fa-solid fa-shield-halved"></i>
-        <h3>Ulinzi na SSL Bure</h3>
+        <h3>Ulinzi & SSL Bure</h3>
         <p>Mifumo na tovuti zote tunazosimamia na kuhost zinapata ulinzi wa kisasa na vyeti vya usalama vya SSL bure kabisa.</p>
       </div>
 
-      <div class="feature-box glass-card">
+      <div class="bento-item bento-wide">
         <i class="fa-solid fa-headset"></i>
         <h3>Msaada wa Kiufundi 24/7</h3>
-        <p>Timu yetu ya wataalamu ipo tayari kukusaidia kutatua changamoto zote za kiufundi au server wakati wowote.</p>
+        <p>Timu yetu ya wataalamu ipo tayari kukusaidia kutatua changamoto zote za kiufundi au server wakati wowote. Tunahakikisha biashara yako haisimami kwa sababu za kiufundi.</p>
       </div>
     </div>
   </section>

@@ -92,78 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Interactive Terminal Simulation (Runs only on index.html)
-  const terminalBody = document.getElementById('terminalBody');
-  const terminalInput = document.getElementById('terminalInput');
-  const copyTerminalBtn = document.getElementById('copyTerminal');
-
-  if (terminalInput && terminalBody) {
-    const commands = {
-      help: 'Amri zinazopatikana: <br>- <b>about</b>: Kuhusu Nyisu Tech Solution.<br>- <b>services</b>: Huduma zetu kuu.<br>- <b>skills</b>: Teknolojia tunazotumia na kufundisha.<br>- <b>hosting</b>: Vifurushi vya cloud hosting.<br>- <b>clear</b>: Kusafisha terminal.<br>- <b>help</b>: Kukuonyesha msaada huu.',
-      about: 'Nyisu Tech Solution ni kampuni inayounda mifumo thabiti ya wavuti, applications za simu, kutoa huduma za hosting na kutoa mafunzo ya vitendo ya programming.',
-      services: 'Huduma zetu kuu:<br>1. Web & Systems Development (Kutengeneza website na mifumo ya kisasa)<br>2. Cloud Hosting & Management (Kuhost na kusimamia server/tovuti)<br>3. Programming Academy (Mafunzo ya vitendo ya lugha mbalimbali za coding)',
-      skills: 'Teknolojia tunazozimudu na kufundisha:<br>- Frontend: React, Next.js, HTML5, CSS3, JavaScript, TailwindCSS<br>- Backend: Python (Django, Flask), Node.js<br>- Servers & Databases: Cloud Dedicated Hosting, Docker, Nginx, PostgreSQL, MySQL',
-      hosting: 'Vifurushi vya Cloud Hosting:<br>1. Kawaida (Basic) - Tsh 5,000/mwezi (5GB SSD, SSL Bure)<br>2. Biashara (Business) - Tsh 12,000/mwezi (25GB SSD, SSL, Backups)<br>3. Custom Cloud - Tsh 30,000/mwezi (Dedicated Resources, Custom Setup)'
-    };
-
-    terminalInput.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        const inputVal = terminalInput.value.trim().toLowerCase();
-        
-        if (inputVal) {
-          // Create user command line
-          const cmdLine = document.createElement('div');
-          cmdLine.className = 'terminal-line';
-          cmdLine.innerHTML = `<span class="terminal-prompt">$</span> <span class="command">${terminalInput.value}</span>`;
-          
-          // Insert before the input line
-          const inputLine = terminalInput.parentElement;
-          terminalBody.insertBefore(cmdLine, inputLine);
-
-          // Process response
-          const responseLine = document.createElement('div');
-          responseLine.className = 'terminal-line';
-
-          if (inputVal === 'clear') {
-            // Clear all terminal lines except input line
-            const allLines = terminalBody.querySelectorAll('.terminal-line');
-            allLines.forEach(line => line.remove());
-          } else if (commands[inputVal]) {
-            responseLine.innerHTML = `<div class="output">${commands[inputVal]}</div>`;
-            terminalBody.insertBefore(responseLine, inputLine);
-          } else {
-            responseLine.innerHTML = `<div class="output" style="color: #ef4444;">Amri haijatambuliwa: '${inputVal}'. Andika 'help' kupata maelekezo.</div>`;
-            terminalBody.insertBefore(responseLine, inputLine);
-          }
-
-          // Scroll terminal to bottom
-          terminalBody.scrollTop = terminalBody.scrollHeight;
-        }
-        
-        terminalInput.value = '';
-      }
-    });
-
-    if (copyTerminalBtn) {
-      copyTerminalBtn.addEventListener('click', () => {
-        const textToCopy = Array.from(terminalBody.querySelectorAll('.terminal-line, .terminal-input-line'))
-          .map(el => {
-            if (el.classList.contains('terminal-input-line')) return '';
-            return el.innerText;
-          }).join('\n');
-
-        navigator.clipboard.writeText(textToCopy).then(() => {
-          const originalClass = copyTerminalBtn.className;
-          copyTerminalBtn.className = 'fa-solid fa-check';
-          copyTerminalBtn.style.color = '#10b981';
-          setTimeout(() => {
-            copyTerminalBtn.className = originalClass;
-            copyTerminalBtn.style.color = '';
-          }, 2000);
-        });
-      });
-    }
-  }
+  // 4. Interactive Terminal Simulation removed
 
   // 5. Contact Form Simulation and URL Plan Selection (Runs only on contact.html)
   const contactForm = document.getElementById('contactForm');
