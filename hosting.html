@@ -54,13 +54,21 @@
     <h2 class="section-title">Chagua <span>Kifurushi Chako</span></h2>
     <p style="text-align: center; color: var(--text-secondary); max-width: 600px; margin: 0 auto 3rem;">Siuze tu uhifadhi (storage), bali nakupa <strong style="color: var(--accent);">usimamizi kamili</strong> (Full Management). Wewe fanya biashara, mimi nitasimamia ufundi wote wa website yako.</p>
     
+    <div style="display: flex; justify-content: center; width: 100%; margin-bottom: 2.5rem;">
+      <div class="pricing-toggle-container">
+        <button class="pricing-toggle-btn" data-billing="monthly">Mwezi 1</button>
+        <button class="pricing-toggle-btn" data-billing="quarterly">Miezi 3</button>
+        <button class="pricing-toggle-btn active" data-billing="annually">Mwaka 1 (Lipa kwa mwaka)</button>
+      </div>
+    </div>
+    
     <div class="pricing-grid">
       <!-- Plan 1: Kianzio (Starter) -->
       <div class="pricing-card glass-card">
         <div class="pricing-header">
           <div class="pricing-name">Starter Management</div>
-          <div class="pricing-price">Tsh 9,000<span>/ mwezi</span></div>
-          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem; line-height: 1.4;">Lipa miezi 3: <strong style="color: var(--text);">Tsh 24,000</strong> (8,000/mwezi)<br>Lipa mwaka 1: <strong style="color: var(--text);">Tsh 80,000</strong></p>
+          <div class="pricing-price" id="starterPrice">Tsh 6,666<span>/ mwezi</span></div>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem; line-height: 1.4;" id="starterSubtext">Mwaka 1: <strong style="color: var(--text-primary);">Tsh 80,000</strong></p>
         </div>
         <ul class="pricing-features">
           <li><i class="fa-solid fa-check"></i> Usimamizi wa Hadi Websites 2</li>
@@ -78,8 +86,8 @@
         <div class="pricing-badge">Maarufu</div>
         <div class="pricing-header">
           <div class="pricing-name">Pro Management</div>
-          <div class="pricing-price">Tsh 15,000<span>/ mwezi</span></div>
-          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem; line-height: 1.4;">Lipa miezi 3: <strong style="color: var(--text);">Tsh 39,000</strong> (13,000/mwezi)<br>Lipa mwaka 1: <strong style="color: var(--text);">Tsh 130,000</strong></p>
+          <div class="pricing-price" id="proPrice">Tsh 10,833<span>/ mwezi</span></div>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem; line-height: 1.4;" id="proSubtext">Mwaka 1: <strong style="color: var(--text-primary);">Tsh 130,000</strong></p>
         </div>
         <ul class="pricing-features">
           <li><i class="fa-solid fa-check"></i> Usimamizi wa Hadi Websites 5</li>
@@ -151,6 +159,6 @@
     <span class="whatsapp-tooltip">Chat nasi WhatsApp</span>
   </a>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>

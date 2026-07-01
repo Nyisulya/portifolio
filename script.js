@@ -168,4 +168,39 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // 6. Pricing Toggle Logic (Runs only on hosting.html)
+  const toggleButtons = document.querySelectorAll('.pricing-toggle-btn');
+  const starterPrice = document.getElementById('starterPrice');
+  const starterSubtext = document.getElementById('starterSubtext');
+  const proPrice = document.getElementById('proPrice');
+  const proSubtext = document.getElementById('proSubtext');
+
+  if (toggleButtons.length > 0) {
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        toggleButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const billing = button.getAttribute('data-billing');
+
+        if (billing === 'monthly') {
+          if (starterPrice) starterPrice.innerHTML = 'Tsh 9,000<span>/ mwezi</span>';
+          if (starterSubtext) starterSubtext.innerHTML = 'Lipa kila mwezi (Mwezi mmoja)';
+          if (proPrice) proPrice.innerHTML = 'Tsh 15,000<span>/ mwezi</span>';
+          if (proSubtext) proSubtext.innerHTML = 'Lipa kila mwezi (Mwezi mmoja)';
+        } else if (billing === 'quarterly') {
+          if (starterPrice) starterPrice.innerHTML = 'Tsh 8,000<span>/ mwezi</span>';
+          if (starterSubtext) starterSubtext.innerHTML = 'Miezi 3: <strong style="color: var(--text-primary);">Tsh 24,000</strong>';
+          if (proPrice) proPrice.innerHTML = 'Tsh 13,000<span>/ mwezi</span>';
+          if (proSubtext) proSubtext.innerHTML = 'Miezi 3: <strong style="color: var(--text-primary);">Tsh 39,000</strong>';
+        } else if (billing === 'annually') {
+          if (starterPrice) starterPrice.innerHTML = 'Tsh 6,666<span>/ mwezi</span>';
+          if (starterSubtext) starterSubtext.innerHTML = 'Mwaka 1: <strong style="color: var(--text-primary);">Tsh 80,000</strong>';
+          if (proPrice) proPrice.innerHTML = 'Tsh 10,833<span>/ mwezi</span>';
+          if (proSubtext) proSubtext.innerHTML = 'Mwaka 1: <strong style="color: var(--text-primary);">Tsh 130,000</strong>';
+        }
+      });
+    });
+  }
 });
