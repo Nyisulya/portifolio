@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nyisulya.github.io/portifolio/sitemap.xml
+Sitemap: https://www.nyisu.com/sitemap.xml
