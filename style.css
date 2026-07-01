@@ -15,6 +15,9 @@
   --font-mono: 'Fira Code', monospace;
   --border-radius: 20px;
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --card-bg: linear-gradient(145deg, rgba(35, 35, 55, 0.6), rgba(15, 15, 25, 0.8));
+  --bento-bg: linear-gradient(145deg, rgba(35, 35, 55, 0.5), rgba(15, 15, 25, 0.9));
+  --float-card-bg: linear-gradient(145deg, rgba(40, 40, 60, 0.8), rgba(20, 20, 30, 0.95));
 }
 
 [data-theme="light"] {
@@ -28,6 +31,9 @@
   --accent-gradient: linear-gradient(135deg, #6d28d9 0%, #2563eb 100%);
   --accent-light: rgba(109, 40, 217, 0.1);
   --shadow-color: rgba(0, 0, 0, 0.05);
+  --card-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.85), rgba(240, 240, 250, 0.95));
+  --bento-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.85), rgba(240, 240, 250, 0.95));
+  --float-card-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(245, 245, 255, 0.98));
 }
 
 * {
@@ -94,10 +100,10 @@ body {
 
 /* Glassmorphism Card Style */
 .glass-card {
-  background: linear-gradient(145deg, rgba(35, 35, 55, 0.6), rgba(15, 15, 25, 0.8));
+  background: var(--card-bg);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--glass-border);
   border-radius: var(--border-radius);
   box-shadow: 0 10px 30px 0 var(--shadow-color);
   transition: var(--transition);
@@ -282,7 +288,7 @@ header {
 
 .hero-content p {
   font-size: 1.2rem;
-  color: #a0a0b0;
+  color: var(--text-secondary);
   margin-bottom: 2.5rem;
   max-width: 540px;
   line-height: 1.7;
@@ -347,10 +353,10 @@ header {
   gap: 1.25rem;
   padding: 1.25rem 1.75rem;
   min-width: 280px;
-  background: linear-gradient(145deg, rgba(40, 40, 60, 0.8), rgba(20, 20, 30, 0.95));
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--float-card-bg);
+  border: 1px solid var(--glass-border);
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px var(--shadow-color), inset 0 1px 1px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   animation: float-card 6s ease-in-out infinite;
@@ -451,8 +457,8 @@ section {
 }
 
 .bento-item {
-  background: linear-gradient(145deg, rgba(35, 35, 55, 0.5), rgba(15, 15, 25, 0.9));
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--bento-bg);
+  border: 1px solid var(--glass-border);
   border-radius: 24px;
   padding: 3rem 2.5rem;
   display: flex;
@@ -462,7 +468,7 @@ section {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px var(--shadow-color), inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .bento-item:hover {
@@ -611,7 +617,7 @@ section {
   width: 100%;
   background-size: cover;
   background-position: top center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid var(--glass-border);
   position: relative;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
